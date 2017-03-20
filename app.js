@@ -1,5 +1,8 @@
 'use strict';
 //image array
+//http://stackoverflow.com/questions/19693256/javascript-display-random-images
+//http://stackoverflow.com/questions/20496746/random-image-display-without-repeat-with-javascript
+
 var imagesArray = [
   'images/img-1.jpg',
   'images/img-2.jpg',
