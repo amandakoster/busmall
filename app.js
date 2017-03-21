@@ -26,26 +26,26 @@ var imgArray = [
   'img/wine-glass.jpg',
 ];
 
-var bag = new Image ('bag', 'img/bag.jpg', 'prod.1');
-var bathroom = new Image('bathroom', 'img/bathroom.jpg', 'prod2');
-var boots = new Image('boots', 'img/boots.jpg', 'prod3');
-var breakfast = new Image('breakfast', 'img/breakfast.jpg', 'prod4');
-var bubblegum = new Image('bubblegum', 'img/bubblegum.jpg', 'prod5');
-var chair = new Image('chair.jpg', 'img/chair.jpg', 'prod6');
-var cthulhu = new Image('cthulhu.jpg', 'img/cthulhu.jpg', 'prod7');
-var dogduck = new Image('dog-duck.jpg', 'img/dog-duck.jpg', 'prod8');
-var dragon = new Image('dragon', 'img/dragon.jpg', 'prod9');
-var dragon = new Image
-var pen = new Image ('pen.jpg', );
-var petsweep = new Image;
-var scissors = new Image;
-var shark = new Image;
-var sweep = new Image;
-var tauntaun = new Image;
-var unicorn = new Image;
-var usb = new Image;
-var watercan = new Image;
-var wineglass = new Image;
+var bag = new Image('bag', 'img/bag.jpg', '1');
+var banana = new Image('banana', 'img/banana.jpg','2');
+var bathroom = new Image('bathroom', 'img/bathroom.jpg', '3');
+var boots = new Image('boots', 'img/boots.jpg', '4');
+var breakfast = new Image('breakfast', 'img/breakfast.jpg', '5');
+var bubblegum = new Image('bubblegum', 'img/bubblegum.jpg', '6');
+var chair = new Image('chair', 'img/chair.jpg', '7');
+var cthulhu = new Image('cthulhu', 'img/cthulhu.jpg', '8');
+var dogduck = new Image('dog-duck', 'img/dog-duck.jpg', '9');
+var dragon = new Image('dragon', 'img/dragon.jpg', '10');
+var pen = new Image ('pen', 'img/pen.jpg', '11');
+var petsweep = new Image ('pet-sweep','img/pet-sweep.jpg' ,'12');
+var scissors = new Image('scissors','img/scissors.jpg', '13') ;
+var shark = new Image('shark', 'img/shark.jpg', '14');
+var sweep = new Image('sweep', 'img/sweep.png', '15');
+var tauntaun = new Image('tauntaun', 'img/tauntaun.jpg','16');
+var unicorn = new Image('unicorn','img/unicorn.jpg', '17');
+var usb = new Image('usb', 'img/usb.gif', '18');
+var watercan = new Image('water-can', 'img/water-can.jpg', '19');
+var wineglass = new Image('wine-glass','img/wine-glass.jpg', '20');
 
 function newImage(imgName, imgPath ){
   this.name = imgName;
