@@ -23,28 +23,26 @@ var imgArray = [
   'img/wine-glass.jpg',
 ];
 
-var bag = new Image ('bag.jpg',jpg, img/bag.jpg  )
-var banana = new Image('banana.jpg', jpg, img/banana.jpg)
-var img/bathroom.jpg = new Image('bathroom.jpg', jpg, img/bathroom.jpg)
-var img/boots.jpg = new Image('boots.jpg', 'jpg', 'img/boots.jpg')
-var img/breakfast.jpg = new Image('breakfast.jpg', 'jpg', 'img/breakfast.jpg')
-var img/bubblegum.jpg = new Image('bubblegum.jpg', 'jpg', img/bubblegum.jpg)
-var img/chair.jpg = new Image('chair.jpg','jpg','img/chair.jpg')
-var img/cthulhu.jpg = new Image('cthulhu.jpg', 'jpg', img/cthulhu.jpg )
-var img/dog-duck.jpg = new Image('dog-duck.jpg', jpg, img/dog-duck.jpg)
-var img/dragon.jpg = new Image()
-var img/dragon.jpg = new Image
-var img/pen.jpg = new Image
-var img/pet-sweep.jpg = new Image
-var img/scissors.jpg = new Image
-var img/shark.jpg = new Image
-var img/sweep.png = new Image
-var img/tauntaun.jpg = new Image
-var img/unicorn.jpg = new Image
-var img/usb.gif = new Image
-var img/water-can.jpg = new Image
-var img/wine-glass.jpg = new Image
-
+var bag = new Image('bag', 'img/bag.jpg', '1');
+var banana = new Image('banana', 'img/banana.jpg','2');
+var bathroom = new Image('bathroom', 'img/bathroom.jpg', '3');
+var boots = new Image('boots', 'img/boots.jpg', '4');
+var breakfast = new Image('breakfast', 'img/breakfast.jpg', '5');
+var bubblegum = new Image('bubblegum', 'img/bubblegum.jpg', '6');
+var chair = new Image('chair', 'img/chair.jpg', '7');
+var cthulhu = new Image('cthulhu', 'img/cthulhu.jpg', '8');
+var dogduck = new Image('dog-duck', 'img/dog-duck.jpg', '9');
+var dragon = new Image('dragon', 'img/dragon.jpg', '10');
+var pen = new Image ('pen', 'img/pen.jpg', '11');
+var petsweep = new Image ('pet-sweep','img/pet-sweep.jpg', '12');
+var scissors = new Image('scissors','img/scissors.jpg', '13') ;
+var shark = new Image('shark', 'img/shark.jpg', '14');
+var sweep = new Image('sweep', 'img/sweep.png', '15');
+var tauntaun = new Image('tauntaun', 'img/tauntaun.jpg','16');
+var unicorn = new Image('unicorn','img/unicorn.jpg', '17');
+var usb = new Image('usb', 'img/usb.gif', '18');
+var watercan = new Image('water-can', 'img/water-can.jpg', '19');
+var wineglass = new Image('wine-glass','img/wine-glass.jpg', '20');
 
 function newImage(bag){
   this.name = imgName;
