@@ -26,11 +26,13 @@ A wise student would take about 30-45 minutes to work on the user stories and al
 ##Technical plan##
 
 1. Built the scaffolding for the app
-2. displayImage():
-  a. select three random photos from the image directory and display them side-by-side-by-side in the browser window. (http://stackoverflow.com/questions/20496746/random-image-display-without-repeat-with-javascript)
+2. function displayImage():
   b. array of 20 images
-  c. function displayImage():
-    i. a 'for loop' that randomizes images
+  a 'for loop' that randomizes images
+3. displayImage():
+  a. select three random photos from the image directory and display them side-by-side-by-side in the browser window. (http://stackoverflow.com/questions/20496746/random-image-display-without-repeat-with-javascript)
+
+  c.
     ii. event handler and listener that connects to the htlm tag
     iii.
     iv. display the random image from the imagesArray array in the canvas image using the random number as the subscript value
