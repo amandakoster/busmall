@@ -72,7 +72,7 @@ function randomImage() {
 
 randomImage();
 
-var clickLimit = 3;
+var clickLimit = 25;
 function handleTheClick() { //self-exlpainatory
   randomImage(); //run this function
   totalClicks++; //incrament clicks up to 25, set below with event listener
