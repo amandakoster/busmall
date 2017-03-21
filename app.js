@@ -72,19 +72,19 @@ function randomImage() {
 
 randomImage();
 
-var clickLimit = 25;
+var clickLimit = 3;
 function handleTheClick() { //self-exlpainatory
   randomImage(); //run this function
   totalClicks++; //incrament clicks up to 25, set below with event listener
-  var ProductIdx = this.alt; //use alt to pont to index in array in order to collect the instances the item was clicked
-  productArray[productIdx].itemClick++; //??????
+  var productIdx = this.alt; //use alt to pont to index in array in order to collect the instances the item was clicked
+  productArray[productIdx].itemClick++;
 
   if (totalClicks === clickLimit) {
     img1.removeEventListener('click', handleTheClick);
     img2.removeEventListener('click', handleTheClick);
     img3.removeEventListener('click', handleTheClick);
     //stops the event listener once we reach 25 clicks
-    productClicks(); //this is define below
+    productClicks(); //this is defined below
   }
 };
 
@@ -95,13 +95,14 @@ img3.addEventListener('click', handleTheClick);
 
 //below - creating a list to print the data into the DOM
 function productClicks() {
-  var content = document.getElementsById('content');
+  var content = document.getElementById('content');
   var ul = document.createElement('ul');
   content.appendChild(ul);
   //for loop to go through the productArray adn print the innerText. Though, the eventListener will stop atfter 25 clicks, as called above.
-  for (var i = 0; 1 < productArray.length; i++) {
+  for (var i = 0; i < productArray.length; i++) {
     var li = document.createElement('li');
     var dataStr = productArray[i].itemClick + ' clicks for ' + productArray[i].itemName;
     li.innerText = dataStr;
+    ul.appendChild(li);
   }
 }

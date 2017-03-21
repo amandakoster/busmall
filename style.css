@@ -1,6 +1,12 @@
 img {
   width: 200px;
   float:left;
-    border: dotted thin gray;
-    margin-left: 10px;
+  border: dotted thin gray;
+  margin-left: 10px;
+}
+
+
+#content {
+  display: block;
+  clear: both;
 }
