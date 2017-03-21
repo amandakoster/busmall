@@ -37,7 +37,7 @@ var cthulhu = new Image('cthulhu', 'img/cthulhu.jpg', '8');
 var dogduck = new Image('dog-duck', 'img/dog-duck.jpg', '9');
 var dragon = new Image('dragon', 'img/dragon.jpg', '10');
 var pen = new Image ('pen', 'img/pen.jpg', '11');
-var petsweep = new Image ('pet-sweep','img/pet-sweep.jpg' ,'12');
+var petsweep = new Image ('pet-sweep','img/pet-sweep.jpg', '12');
 var scissors = new Image('scissors','img/scissors.jpg', '13') ;
 var shark = new Image('shark', 'img/shark.jpg', '14');
 var sweep = new Image('sweep', 'img/sweep.png', '15');
@@ -46,6 +46,19 @@ var unicorn = new Image('unicorn','img/unicorn.jpg', '17');
 var usb = new Image('usb', 'img/usb.gif', '18');
 var watercan = new Image('water-can', 'img/water-can.jpg', '19');
 var wineglass = new Image('wine-glass','img/wine-glass.jpg', '20');
+
+var totalClicks = 0;
+var img1 = document.getElementById ('left');
+var img2 = document.getElementById ('center');
+var img3 = document.getElementById ('right');
+var pictureList = [];
+
+function itemPicks(itemName, itemPath) {
+  this.itemName = itemName;
+  this.itemPath - itemPath;
+  this.imageShown = 0;
+  pictureList.push(this);
+}
 
 function newImage(imgName, imgPath ){
   this.name = imgName;
