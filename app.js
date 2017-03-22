@@ -56,7 +56,7 @@ function randomImage() {
 
 randomImage();
 
-var clickLimit = 3;
+var clickLimit = 25;
 function handleTheClick() { //self-exlpainatory
   randomImage(); //run this function
   totalClicks++; //incrament clicks up to 25, set below with event listener
@@ -77,47 +77,12 @@ img2.addEventListener('click', handleTheClick);
 img3.addEventListener('click', handleTheClick);
 //this calls the event listener and names the event 'click' and runs handleTheClick.
 
-//below - creating a list to print the data into the DOM
-// var myChart = new Chart(ctx, {
-//   type: 'bar',
-//   data: data,
-//   options: {
-//     scales: {
-//       yAxes: [{
-//         ticks: {
-//           beginAtZero:true
-//         }
-//       }]
-//     }
-//   }
-// });
-//
-// var data = {
-//   labels: ['Zach', 'Becky', 'Sean', 'Max'],
-//   datasets: [{
-//     label: 'Student Heights',
-//     data: studentHeights,
-//     backgroundColor: 'red'
-//   }, {
-//     label: 'Student Ages',
-//     data: studentAges
-//   }]
-// };
 var voteTotals = [];
 function productClicks() {
-  var content = document.getElementById('content');
-  var ul = document.createElement('ul');
-
-  content.appendChild(ul);
   for (var i = 0; i < productArray.length; i++) {
-    var li = document.createElement('li');
-    var dataStr = productArray[i].itemClick + ' clicks for ' + productArray[i].itemName;
-    li.innerText = dataStr;
-    ul.appendChild(li);
-    console.log(productArray[i].itemClick);
     voteTotals.push(productArray[i].itemClick);
-    console.log('voteTotals', voteTotals);
   }
+
   var canvas = document.getElementById('chart');
   var ctx = canvas.getContext('2d');
 
@@ -126,7 +91,7 @@ function productClicks() {
     datasets: [{
       label: 'Product Name',
       data: voteTotals,
-      backgroundColor: 'red'
+      backgroundColor: 'orange'
     }]
   };
 
