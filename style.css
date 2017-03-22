@@ -1,11 +1,26 @@
 img {
-  width: 200px;
   float:left;
   border: dotted thin gray;
-  margin-left: 10px;
+  margin: 20px;
+  height: 200px;
+  width: 200px;
 }
 
-#content {
-  display: block;
-  clear: both;
+.fa {
+  color: #F18F01;
+  margin: 20px;
+  font-size: 100px;
+}
+
+h1 {
+  font-family: 'Baloo Bhaina';
+  font-size: 100px;
+  float: left;
+  margin: 20px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  clear: left;
+  margin: 20px;
 }
