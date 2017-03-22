@@ -1,0 +1,22 @@
+
+'use strict';
+
+var theForm = document.getElementById('theForm');
+theForm.addEventListener('submit', function(event){
+  event.preventDefault();
+
+  var productArray = [];
+  var ingredients = this.elements.ingredients;
+  for (var i = 0; i < ingredients.length; i++){
+    var theIngredient = ingredients[i];
+
+    if (theIngredient.checked) {
+      ingredientsArray.push(theIngredient.value);
+    }
+  }
+  var existingData = JSON.parse(localStorage['ingredients']);
+  // do something to extend that array
+  localStorage['ingredients'] = JSON.stringify(ingredientsArray);
+  this.reset();
+  window.location = 'second.html';
+});
