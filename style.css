@@ -1,9 +1,33 @@
+h1 {
+  font-family: 'Baloo Bhaina';
+  font-size: 100px;
+  margin: 30px;
+  display: block;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 30px;
+}
+
 img {
+  width: 200px;
+  height: 200px;
   float:left;
   border: dotted thin gray;
-  margin: 20px;
-  height: 200px;
-  width: 200px;
+  margin-left: 10px;
+}
+
+#photos {
+display: block;
+margin: auto;
+width: 700px;
+padding: 30px;
+}
+
+#content {
+  display: block;
+  clear: both;
 }
 
 .fa {
@@ -12,20 +36,6 @@ img {
   font-size: 100px;
 }
 
-h1 {
-  font-family: 'Baloo Bhaina';
-  font-size: 100px;
-  float: left;
-  margin: 20px;
-}
-
-p {
-  font-family: 'Open Sans', sans-serif;
-  clear: left;
-  margin: 20px;
-}
-
-section {
-  text: center;
-  border: pink;
+.chart {
+    clear: left;
 }
