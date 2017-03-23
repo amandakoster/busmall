@@ -34,6 +34,12 @@ h1 {
   padding: 0;
 }
 
+h1 i:hover {
+  color: #F7DC6F;
+  transition-delay:.1s;
+  transform: rotate(7deg);
+}
+
 p {
   font-family: 'Open Sans',sans-serif;
   font-size: 18px;
@@ -55,16 +61,44 @@ width: 700px;
 padding: 30px;
 }
 
+img:hover {
+border: thin dotted orange;
+}
+
 #content {
   display: block;
   clear: both;
 }
 
-.fa {
+i {
   color: #F18F01;
   padding: 0;
   margin-left: 20px;
   margin-top: 20px;
+
+}
+
+hr {
+border:dashed 2px;
+width: 500px;
+width: 50%;
+margin: 0 auto;
+display: block;
+}
+
+div i  {
+text-align: center;
+margin-left: 49%;
+/*padding-bottom: 20px;*/
+/*padding-bottom: 100px;*/
+color: black;
+position: relative;
+}
+
+
+
+canvas{
+  margin-top: 40px;
 }
 
 .chart {
