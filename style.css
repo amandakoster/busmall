@@ -24,3 +24,8 @@ p {
   clear: left;
   margin: 20px;
 }
+
+section {
+  text: center;
+  border: pink;
+}
