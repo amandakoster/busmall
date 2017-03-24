@@ -67,7 +67,7 @@ function randomImage() {
 
 randomImage();
 
-var clickLimit = 5;
+var clickLimit = 25;
 function handleTheClick() {
 //self-exlpainatory
   randomImage(); //run this function
