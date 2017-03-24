@@ -97,6 +97,16 @@ function productClicks() {
     voteTotals.push(percent);
   }
 
+  // resetBtn help from Zachary Diehl
+  function resetData() {
+    var confirmReset = confirm('This will erase all previous results, are you sure you want to reset?');
+    if(confirmReset){
+      localStorage.clear();
+      window.location.reload();
+    }
+    resetBtn.addEventListener('click', resetData);
+  }
+
   var canvas = document.getElementById('chart');
   var ctx = canvas.getContext('2d');
 

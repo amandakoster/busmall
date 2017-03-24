@@ -74,7 +74,17 @@ i {
   padding: 0;
   margin-left: 20px;
   margin-top: 20px;
+}
 
+#resetBtn {
+  padding: 30px;
+  display: block;
+  margin: auto;
+  width: 200px;
+  height: 20px;
+  font-family: 'Open Sans',sans-serif;
+  font-size: 10px;
+  bottom: 
 }
 
 #usd-style {
@@ -140,8 +150,6 @@ margin-left: 49%;
 color: black;
 position: relative;
 }
-
-
 
 canvas{
   margin-top: 40px;
