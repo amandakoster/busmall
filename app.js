@@ -21,6 +21,15 @@ for (var i = 0; i < imgArray.length; i++) {
   var filePath = 'img/' + imgArray[i];
   new Products(nameArray[i], filePath);
 }
+
+if (localStorage.whatever) {
+  var storageArray = JSON.parse(localStorage.whatever);
+  for (var i = 0; i < storageArray.length; i++) {
+    productArray[i].itemClick += storageArray[i].itemClick;
+    productArray[i].imageShown += storageArray[i].imageShown ;
+  }
+}
+
 function randomImgIndex() {
   return Math.floor(Math.random() * imgArray.length);
 }
@@ -58,16 +67,8 @@ function randomImage() {
 
 randomImage();
 
-if (localStorage.whatever) {
-  var storageArray = JSON.parse(localStorage.whatever);
-  for (var i = 0; i < storageArray.length; i++) {
-    productArray[i].itemClick += storageArray[i].itemClick;
-  }
-}
-
 var clickLimit = 5;
 function handleTheClick() {
-  console.log(this);
 //self-exlpainatory
   randomImage(); //run this function
   totalClicks++; //incrament clicks up to 25, set below with event listener
@@ -92,7 +93,8 @@ img3.addEventListener('click', handleTheClick);
 var voteTotals = [];
 function productClicks() {
   for (var i = 0; i < productArray.length; i++) {
-    voteTotals.push(productArray[i].itemClick);
+    var percent = productArray[i].itemClick / productArray[i].imageShown * 100;
+    voteTotals.push(percent);
   }
 
   var canvas = document.getElementById('chart');
@@ -101,7 +103,7 @@ function productClicks() {
   var data = {
     labels: nameArray,
     datasets: [{
-      label: 'Product Name',
+      label: 'Percentage Clicked',
       data: voteTotals,
       backgroundColor: 'orange'
     }]
@@ -114,7 +116,8 @@ function productClicks() {
       scales: {
         yAxes: [{
           ticks: {
-            beginAtZero:true
+            beginAtZero:true,
+            max:100
           }
         }]
       }
