@@ -57,8 +57,7 @@ img {
 #photos {
 display: block;
 margin: auto;
-width: 700px;
-padding: 30px;
+width: 650px;
 }
 
 img:hover {
@@ -78,8 +77,16 @@ i {
 
 }
 
+#usd-style {
+  position: relative;
+  bottom: 48px;
+  background-color: white;
+  color: rgb(17, 199, 28 );
+  padding: 10px;
+}
+
 hr {
-border:dashed 2px;
+border:dashed 1px;
 width: 500px;
 width: 50%;
 margin: 0 auto;
