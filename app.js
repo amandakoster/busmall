@@ -38,7 +38,6 @@ function randomImage() {
   var currentImgIndexes = [];
   while (currentImgIndexes.length < 3) {
     var imgSelector = randomImgIndex();
-    //below is the secret sauce! this means if current AND previous ImgIndex are not the same or true (which they are) then run the randomImgIndex
     if (!currentImgIndexes.includes(imgSelector) && !prevImgIndexes.includes(imgSelector)) {
       currentImgIndexes.push(imgSelector);
     }
@@ -56,10 +55,8 @@ function randomImage() {
   img1.alt = currentImgIndexes[0];
   img2.alt = currentImgIndexes[1];
   img3.alt = currentImgIndexes[2];
-  console.log(currentImgIndexes);
-//turns current images to previous in order to get new images (and not repeat previous images).
+
   prevImgIndexes = currentImgIndexes;
-  //increases image shows in incraments of 1
   prod1.imageShown++;
   prod2.imageShown++;
   prod3.imageShown++;
@@ -69,10 +66,9 @@ randomImage();
 
 var clickLimit = 25;
 function handleTheClick() {
-//self-exlpainatory
-  randomImage(); //run this function
-  totalClicks++; //incrament clicks up to 25, set below with event listener
-  var productIdx = this.alt; //use alt to pont to index in array in order to collect the instances the item was clicked
+  randomImage();
+  totalClicks++;
+  var productIdx = this.alt;
   productArray[productIdx].itemClick++;
 
   if (totalClicks === clickLimit) {
@@ -88,23 +84,12 @@ function handleTheClick() {
 img1.addEventListener('click', handleTheClick);
 img2.addEventListener('click', handleTheClick);
 img3.addEventListener('click', handleTheClick);
-//this calls the event listener and names the event 'click' and runs handleTheClick.
 
 var voteTotals = [];
 function productClicks() {
   for (var i = 0; i < productArray.length; i++) {
     var percent = productArray[i].itemClick / productArray[i].imageShown * 100;
     voteTotals.push(percent);
-  }
-
-  // resetBtn help from Zachary Diehl
-  function resetData() {
-    var confirmReset = confirm('This will erase all previous results, are you sure you want to reset?');
-    if(confirmReset){
-      localStorage.clear();
-      window.location.reload();
-    }
-    resetBtn.addEventListener('click', resetData);
   }
 
   var canvas = document.getElementById('chart');
