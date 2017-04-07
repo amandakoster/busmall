@@ -1,47 +1,35 @@
-
 <!DOCTYPE html>
-
 <html>
 <head>
-  <script src="https://use.fontawesome.com/20877e6602.js"></script>
+	<script src="https://use.fontawesome.com/20877e6602.js">
+	</script>
 	<meta charset="utf-8">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
-<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Open+Sans" rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js">
+	</script>
+	<link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina|Open+Sans" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
 	<title>BusMall</title>
-
-<link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/png">
 </head>
-
 <body>
-  <h1><i class="fa fa-bus fa-2x" aria-hidden="true"></i>Bus Mall</h1>
+	<h1><i aria-hidden="true" class="fa fa-bus fa-2x"></i>Bus Mall</h1>
 	<main>
-
-    <section id="text">
-      <p>The following is a market analysis on proposed products to test their potential customer interest.</p>
-      <p> Please select one of three random products per turn. After 25 selections have been made your votes will be displayed in a chart below.</p>
-      <p>Please refresh your browser to reset each round of 25 selections. All selections will compound into the same chart.</p>
-    </section>
-
-    <div id="usd">
-      <hr>
-      <i id="usd-style"class="fa fa-usd fa-2x" aria-hidden="true"></i>
-    </div>
-
+		<section id="text">
+			<p>The following is a market analysis on proposed products to test their potential customer interest.</p>
+			<p>Please select one of three random products per turn. After 25 selections have been made your votes will be displayed in a chart below.</p>
+		</section>
+		<div id="usd">
+			<hr>
+			<i aria-hidden="true" class="fa fa-usd fa-2x" id="usd-style"></i>
+		</div>
 		<section id="photos">
-		    <div class="images"><img alt="" id="left" src="">
-		    </div>
-		    <div class="images"><img alt="" id="center" src="">
-    		</div>
-    		<div class="images"><img alt="" id="right" src="">
-    		</div>
-    		<div class="clearfix">
-    		</div>
-    </section>
+			<div class="images"><img alt="" id="left" src=""></div>
+			<div class="images"><img alt="" id="center" src=""></div>
+			<div class="images"><img alt="" id="right" src=""></div>
+			<div class="clearfix"></div>
+		</section>
 	</main>
-
-	<div id="content">
-	</div>
+	<div id="content"></div>
 	<canvas height="300" id="chart" width="500"></canvas>
 	<script charset="utf-8" src="app.js">
 	</script>
